@@ -1,7 +1,6 @@
+var city = "Hyderabad";
+document.write("City:" + city + "<br>");
+var newcity = city.replace("Hyder", "Islam");
+console.log(newcity);
 
-var qual = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M.Phil", "PhD"]
-
-document.write("Qualifications: <br/>")
-for (q in qual) {
-    document.write((Number(q) + 1) + ") " + qual[q] + "<br/>")
-}
+document.write("After replacement:" + newcity + "<br>");

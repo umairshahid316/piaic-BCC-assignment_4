@@ -1,11 +1,10 @@
-var cities = ["karachi", "lahore", "Islamabad", "Multan", "Hyderabad"]
-var selectedCities = [];
+var email = prompt("Enter Email");
 
-selectedCities[0] = cities[4];
-selectedCities[1] = cities[0];
-selectedCities[2] = cities[2];
+var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-document.write("Selected cities List <br/>")
-for (c in selectedCities) {
-    document.write(selectedCities[c] + " <br/>")
+if (email.match(mailformat)) {
+    alert("Valid email address!");
+}
+else {
+    alert("You have entered an invalid email address!");
 }

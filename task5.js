@@ -1,24 +1,5 @@
-
-var arr1 = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
-var dup = [];
-
-for (d in arr1) {
-
-
-    for (r in dup) {
-
-        if (arr1[d] != dup[r]) {
-            dup[r] = arr1[d]
-
-        }
-
-    }
-
-
-
-}
-
-// for (r in dup) {
-document.write(dup)
-// }
-
+var num = prompt("");
+document.write("Number:  ", num);
+document.write("</br>Round off Value: ", Math.round(num));
+document.write("</br>Floor Value: ", Math.floor(num));
+document.write("</br>Ceil Value: ", Math.ceil(num));

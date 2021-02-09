@@ -1,12 +1,9 @@
-var arr = ["cake", "apple pie", "cookie", "chips", "patties"]
-
-var input = prompt("Enter search value");
-
-for (a in arr) {
-
-    if (input == arr[a]) {
-        alert(input + " value found")
-        break;
-    }
-
+var input = prompt("enter a number");
+var numArray = input.split("");
+var a = numArray.length
+var sum = 0
+for (var i = 0; i < input.length; i++) {
+    sum += parseInt(numArray[i]);
+    average = sum / a;
 }
+document.write(average);
